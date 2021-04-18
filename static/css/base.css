@@ -9,3 +9,7 @@ body {
     color: #555;
     font-family: 'Lato';
 }
+
+.bg-black {
+    background: black !important;
+}
