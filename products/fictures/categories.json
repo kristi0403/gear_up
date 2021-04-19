@@ -1,0 +1,73 @@
+[{
+        "pk": 1,
+        "model": "products.category",
+        "fields": {
+            "name": "PS4",
+            "friendly_name": "PS4"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "products.category",
+        "fields": {
+            "name": "Xbox_one",
+            "friendly_name": "Xbox One"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "products.category",
+        "fields": {
+            "name": "action_adventure",
+            "friendly_name": "Action-adventure"
+        }
+    },
+    {
+        "pk": 4,
+        "model": "products.category",
+        "fields": {
+            "name": "car_race",
+            "friendly_name": "Car Race"
+        }
+    },
+    {
+        "pk": 5,
+        "model": "products.category",
+        "fields": {
+            "name": "fps",
+            "friendly_name": "FPS"
+        }
+    },
+    {
+        "pk": 6,
+        "model": "products.category",
+        "fields": {
+            "name": "sport",
+            "friendly_name": "Sport"
+        }
+    },
+    {
+        "pk": 7,
+        "model": "products.category",
+        "fields": {
+            "name": "horror",
+            "friendly_name": "Horror"
+        }
+    },
+    {
+        "pk": 8,
+        "model": "products.category",
+        "fields": {
+            "name": "platform",
+            "friendly_name": "platform"
+        }
+    },
+    {
+        "pk": 9,
+        "model": "products.category",
+        "fields": {
+            "name": "new_arrivals",
+            "friendly_name": "New Arrivals"
+        }
+    }
+]
