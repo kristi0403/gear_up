@@ -28,6 +28,7 @@ var card = elements.create('card', {
     style: style
 });
 card.mount('#card-element');
+
 // Handle realtime validation errors on the card element
 card.addEventListener('change', function (event) {
     var errorDiv = document.getElementById('card-errors');
@@ -43,6 +44,7 @@ card.addEventListener('change', function (event) {
         errorDiv.textContent = '';
     }
 });
+
 // Handle form submit
 var form = document.getElementById('payment-form');
 
@@ -64,6 +66,7 @@ form.addEventListener('submit', function (ev) {
         'save_info': saveInfo,
     };
     var url = '/checkout/cache_checkout_data/';
+
     $.post(url, postData).done(function () {
         stripe.confirmCardPayment(clientSecret, {
             payment_method: {
@@ -79,7 +82,6 @@ form.addEventListener('submit', function (ev) {
                         country: $.trim(form.country.value),
                         state: $.trim(form.county.value),
                     }
-
                 }
             },
             shipping: {
@@ -98,10 +100,10 @@ form.addEventListener('submit', function (ev) {
             if (result.error) {
                 var errorDiv = document.getElementById('card-errors');
                 var html = `
-            <span class="icon" role="alert">
-            <i class="fas fa-times"></i>
-            </span>
-            <span>${result.error.message}</span>`;
+                    <span class="icon" role="alert">
+                    <i class="fas fa-times"></i>
+                    </span>
+                    <span>${result.error.message}</span>`;
                 $(errorDiv).html(html);
                 $('#payment-form').fadeToggle(100);
                 $('#loading-overlay').fadeToggle(100);
@@ -111,13 +113,12 @@ form.addEventListener('submit', function (ev) {
                 $('#submit-button').attr('disabled', false);
             } else {
                 if (result.paymentIntent.status === 'succeeded') {
-                    form.submit();
+                    // form.submit();
                 }
             }
         });
     }).fail(function () {
-        // reload page if error
+        // just reload the page, the error will be in django messages
         location.reload();
     })
-
 });
