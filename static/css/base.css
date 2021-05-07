@@ -19,6 +19,12 @@ body {
     height: 100px;
 }
 
+.platform-logo {
+    background-size: cover;
+    height: 30px;
+}
+
+
 /* from Bulma */
 .icon {
     align-items: center;
