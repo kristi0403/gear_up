@@ -3,7 +3,7 @@
         <li class="nav-item dropdown">
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="all-products-link"
                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                All Products
+                All Games
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
                 <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
@@ -15,7 +15,7 @@
         <li class="nav-item dropdown">
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="ps4-link" data-toggle="dropdown"
                 aria-haspopup="true" aria-expanded="false">
-                PS4 Games
+                <img class="platform-logo" src="/media/ps4_logo.jpeg" alt="page-logo" />
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="ps4-link">
                 <a href="{% url 'products' %}?category=action_adventure" class="dropdown-item">Action-Adventure</a>
@@ -30,7 +30,7 @@
         <li class="nav-item dropdown">
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="xbox-one-link"
                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Xbox One Games
+                <img class="platform-logo" src="/media/xbox_one_logo.jpeg" alt="page-logo" />
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
                 <a href="{% url 'products' %}?category=action_adventure" class="dropdown-item">Action-Adventure</a>
