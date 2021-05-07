@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    background: url('media/background_image.jpeg') no-repeat center center fixed;
+    background: url('/media/background.jpeg') no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 164px);
     color: #555;
@@ -24,6 +24,10 @@ body {
     height: 30px;
 }
 
+.slider {
+    padding-top: 100px;
+    max-height: 650px;
+}
 
 /* from Bulma */
 .icon {
@@ -86,7 +90,7 @@ body {
 }
 
 .bg-black {
-    background: #000 !important;
+    background: #100c !important;
 }
 
 .overlay {
