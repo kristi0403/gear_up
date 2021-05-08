@@ -14,6 +14,10 @@ ul {
     align-items: center;
 }
 
+.text-muted {
+    color: white;
+}
+
 .frame {
     outline-width: 2px;
     outline-color: cornflowerblue;
@@ -102,7 +106,7 @@ ul {
 }
 
 .bg-black {
-    background: #100c !important;
+    background: #100 !important;
 }
 
 .overlay {
@@ -117,6 +121,10 @@ ul {
 a.category-badge>span.badge:hover {
     background: #212529 !important;
     color: #fff !important;
+}
+
+.products-count {
+    color: white;
 }
 
 .btt-button {
