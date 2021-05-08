@@ -18,6 +18,13 @@ ul {
     color: white;
 }
 
+.navigation {
+    padding: 100px 0px;
+    width: 50px;
+    background-color: black;
+    top: 100px;
+}
+
 .frame {
     outline-width: 2px;
     outline-color: cornflowerblue;
