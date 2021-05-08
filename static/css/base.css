@@ -10,8 +10,20 @@ body {
     font-family: 'Lato';
 }
 
-.bg-black {
-    background: black !important;
+ul {
+    align-items: center;
+}
+
+.frame {
+    outline-width: 2px;
+    outline-color: cornflowerblue;
+    outline-style: solid;
+}
+
+.game-frame {
+    outline-width: 6px;
+    outline-color: black;
+    outline-style: solid;
 }
 
 .page-logo {
@@ -99,7 +111,6 @@ body {
     top: 0;
     left: 0;
     position: fixed;
-    background: white;
     z-index: -1;
 }
 
