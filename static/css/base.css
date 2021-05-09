@@ -149,6 +149,10 @@ ul {
     color: #000 !important;
 }
 
+.border-white {
+    border: 3px solid white !important;
+}
+
 .border-black {
     border: 1px solid black !important;
 }
