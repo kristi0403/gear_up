@@ -10,20 +10,7 @@ from .models import Product, Category
 
 def all_products(request):
     """ A view to show all products """
-
     products = Product.objects.all()
-    p = Paginator(products, 12)
-    page_num = request.GET.get('page', 1)
-
-    try:
-        page = p.page(page_num)
-    except EmptyPage:
-        page = p.page(1)
-
-    query = None
-    categories = None
-    sort = None
-    direction = None
 
     if request.GET:
         if 'sort' in request.GET:
@@ -56,6 +43,19 @@ def all_products(request):
             queries = Q(name__icontains=query) | Q(
                 description__icontains=query)
             products = products.filter(queries)
+
+    p = Paginator(products, 12)
+    page_num = request.GET.get('page', 1)
+
+    try:
+        page = p.page(page_num)
+    except EmptyPage:
+        page = p.page(1)
+
+    query = None
+    categories = None
+    sort = None
+    direction = None
 
     current_sorting = f'{sort}_{direction}'
 
