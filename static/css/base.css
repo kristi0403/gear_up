@@ -14,6 +14,10 @@ ul {
     align-items: center;
 }
 
+.product-display {
+    padding-top: 100px;
+}
+
 .text-muted {
     color: white;
 }
@@ -63,6 +67,11 @@ ul {
 
 .logo-font {
     text-transform: uppercase;
+    color: white;
+}
+
+.product-page {
+    background-color: lavender;
 }
 
 .main-logo-link {
