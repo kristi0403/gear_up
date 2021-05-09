@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from django.db.models import Q
+from django.core.paginator import Paginator, EmptyPage
 from django.db.models.functions import Lower
 from .models import Product, Category
 
@@ -11,6 +12,14 @@ def all_products(request):
     """ A view to show all products """
 
     products = Product.objects.all()
+    p = Paginator(products, 12)
+    page_num = request.GET.get('page', 1)
+
+    try:
+        page = p.page(page_num)
+    except EmptyPage:
+        page = p.page(1)
+
     query = None
     categories = None
     sort = None
@@ -51,7 +60,7 @@ def all_products(request):
     current_sorting = f'{sort}_{direction}'
 
     context = {
-        'products': products,
+        'products': page,
         'search_term': query,
         'current_categories': categories,
         'current_sorting': current_sorting,
