@@ -65,6 +65,38 @@ ul {
     width: 1.5rem;
 }
 
+/* Paginator */
+
+.pagination {
+    text-align: center;
+    margin: 1em;
+    justify-content: center;
+}
+
+.pagination-action {
+    margin: 0 0.2em;
+    display: inline-block;
+    padding: 0.6;
+    color: white;
+    font-size: 1.4em;
+}
+
+.pagination-action:hover {
+    color: #3354AA;
+}
+
+.pagination-number {
+    background-color: #6D85C7;
+    padding: 0.6em 0.9em;
+    color: #fff;
+    border-radius: 2px;
+}
+
+.pagination-number:hover,
+.pagination-current {
+    background-color: #3354AA;
+}
+
 .logo-font {
     text-transform: uppercase;
     color: white;
