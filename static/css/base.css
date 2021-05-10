@@ -14,6 +14,11 @@ ul {
     align-items: center;
 }
 
+.bag-container {
+    padding: 165px 30px;
+    background-color: lavender;
+}
+
 .form-check-label {
     color: white;
 }
