@@ -5,16 +5,15 @@
 </a>
 {% if not widget.required %}
 <div class="custom-control custom-checkbox mt-2">
-    <input class="custom-control-input" type="checkbox" name="{{ widget.checkbox_name }}" id="{{ widget.checkbox_id }}"
-        {% if widget.attrs.disabled %} disabled{% endif %}>
-    <label class="custom-control-label text-danger"
+    <input class="custom-control-input" type="checkbox" name="{{ widget.checkbox_name }}" id="{{ widget.checkbox_id }}">
+    <label class="custom-control-label text-black"
         for="{{ widget.checkbox_id }}">{{ widget.clear_checkbox_label }}</label>
 </div>
 {% endif %}<br>
-{{ widget.input_text }}:
+{{ widget.input_text }}
 {% endif %}
-<span class="btn btn-black rounded-0 btn-file">
-    Select Image <input id="new-image" type="{{ widge.type }}" name="{{ widge.name }}"
+<span class="btn btn-black rounded-2 btn-file">
+    Change Image <input id="new-image" type="{{ widget.type }}" name="{{ widget.name }}"
         {% include "django/forms/widgets/attrs.html" %}>
 </span>
 <strong>
