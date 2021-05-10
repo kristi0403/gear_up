@@ -131,6 +131,33 @@ ul {
     min-width: 260px;
 }
 
+/* Product Form */
+
+.btn-file {
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-file input[type="file"] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.custom-checkbox .custom-control-label::before {
+    border-radius: 0;
+    border-color: black;
+}
+
+.custom-checkbox .custom-control-input:checked~.custom-control-label::before {
+    background-color: red;
+    border-color: black;
+}
+
 .btn-black {
     background: black;
     color: white;
@@ -139,7 +166,6 @@ ul {
 .btn-outline-black {
     background: white;
     color: black !important;
-    /* use important to override link colors for <a> elements */
     border: 1px solid black;
 }
 
