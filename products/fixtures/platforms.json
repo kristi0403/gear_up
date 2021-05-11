@@ -1,0 +1,17 @@
+[{
+        "pk": 1,
+        "model": "products.platform",
+        "fields": {
+            "name": "ps4",
+            "friendly_name": "PS4"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "products.platform",
+        "fields": {
+            "name": "xbox1",
+            "friendly_name": "XBOX1"
+        }
+    }
+]
