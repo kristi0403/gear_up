@@ -45,13 +45,5 @@
             "name": "platform",
             "friendly_name": "platform"
         }
-    },
-    {
-        "pk": 7,
-        "model": "products.category",
-        "fields": {
-            "name": "new_arrivals",
-            "friendly_name": "New Arrivals"
-        }
     }
 ]
