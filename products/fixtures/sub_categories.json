@@ -1,0 +1,98 @@
+[{
+        "pk": 1,
+        "model": "products.sub_category",
+        "fields": {
+            "name": "ps4_action_adventure",
+            "friendly_name": "PS4 Action-adventure"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "products.sub_category",
+        "fields": {
+            "name": "ps4_car_race",
+            "friendly_name": "PS4 Car Race"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "products.sub_category",
+        "fields": {
+            "name": "ps4_fps",
+            "friendly_name": "PS4 FPS"
+        }
+    },
+    {
+        "pk": 4,
+        "model": "products.sub_category",
+        "fields": {
+            "name": "ps4_sport",
+            "friendly_name": "PS4 Sport"
+        }
+    },
+    {
+        "pk": 5,
+        "model": "products.sub_category",
+        "fields": {
+            "name": "ps4_horror",
+            "friendly_name": "PS4 Horror"
+        }
+    },
+    {
+        "pk": 6,
+        "model": "products.sub_category",
+        "fields": {
+            "name": "ps4_platform",
+            "friendly_name": "PS4 Platform"
+        }
+    },
+    {
+        "pk": 7,
+        "model": "products.sub_category",
+        "fields": {
+            "name": "xbox1_action_adventure",
+            "friendly_name": "XBOX1 Action-adventure"
+        }
+    },
+    {
+        "pk": 8,
+        "model": "products.sub_category",
+        "fields": {
+            "name": "xbox1_car_race",
+            "friendly_name": "XBOX1 Car Race"
+        }
+    },
+    {
+        "pk": 9,
+        "model": "products.sub_category",
+        "fields": {
+            "name": "xbox1_fps",
+            "friendly_name": "XBOX1 FPS"
+        }
+    },
+    {
+        "pk": 10,
+        "model": "products.sub_category",
+        "fields": {
+            "name": "xbox1_sport",
+            "friendly_name": "XBOX1 Sport"
+        }
+    },
+    {
+        "pk": 11,
+        "model": "products.sub_category",
+        "fields": {
+            "name": "xbox1_horror",
+            "friendly_name": "XBOX1 Horror"
+        }
+    },
+    {
+        "pk": 12,
+        "model": "products.sub_category",
+        "fields": {
+            "name": "xbox1_platform",
+            "friendly_name": "XBOX1 Platform"
+        }
+    }
+
+]
