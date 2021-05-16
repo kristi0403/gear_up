@@ -18,12 +18,13 @@
                 <img class="frame platform-logo" src="/media/ps4_logo.jpeg" alt="page-logo" />
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="ps4-link">
-                <a href="{% url 'products' %}?category=action_adventure" class="dropdown-item">Action-Adventure</a>
-                <a href="{% url 'products' %}?category=car_race" class="dropdown-item">Car race</a>
-                <a href="{% url 'products' %}?category=fps" class="dropdown-item">Fps</a>
-                <a href="{% url 'products' %}?category=sport" class="dropdown-item">Sport</a>
-                <a href="{% url 'products' %}?category=horror" class="dropdown-item">Horror</a>
-                <a href="{% url 'products' %}?category=platform" class="dropdown-item">Platform</a>
+                <a href="{% url 'products' %}?sub_category=ps4_action_adventure"
+                    class="dropdown-item">Action-Adventure</a>
+                <a href="{% url 'products' %}?sub_category=ps4_car_race" class="dropdown-item">Car race</a>
+                <a href="{% url 'products' %}?sub_category=ps4_fps" class="dropdown-item">Fps</a>
+                <a href="{% url 'products' %}?sub_category=ps4_sport" class="dropdown-item">Sport</a>
+                <a href="{% url 'products' %}?sub_category=ps4_horror" class="dropdown-item">Horror</a>
+                <a href="{% url 'products' %}?sub_category=ps4_platform" class="dropdown-item">Platform</a>
                 <a href="{% url 'products' %}?platform=ps4" class="dropdown-item">All PS4 games</a>
             </div>
         </li>
@@ -33,13 +34,14 @@
                 <img class="frame platform-logo" src="/media/xbox_one_logo.jpeg" alt="page-logo" />
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
-                <a href="{% url 'products' %}?category=action_adventure" class="dropdown-item">Action-Adventure</a>
-                <a href="{% url 'products' %}?category=car_race" class="dropdown-item">Car race</a>
-                <a href="{% url 'products' %}?category=fps" class="dropdown-item">Fps</a>
-                <a href="{% url 'products' %}?category=sport" class="dropdown-item">Sport</a>
-                <a href="{% url 'products' %}?category=horror" class="dropdown-item">Horror</a>
-                <a href="{% url 'products' %}?category=platform" class="dropdown-item">Platform</a>
-                <a href="{% url 'products' %}?platform=xbox1" class="dropdown-item">All Products</a>
+                <a href="{% url 'products' %}?sub_category=xbox1_action_adventure"
+                    class="dropdown-item">Action-Adventure</a>
+                <a href="{% url 'products' %}?sub_category=xbox1_car_race" class="dropdown-item">Car race</a>
+                <a href="{% url 'products' %}?sub_category=xbox1_fps" class="dropdown-item">Fps</a>
+                <a href="{% url 'products' %}?sub_category=xbox1_sport" class="dropdown-item">Sport</a>
+                <a href="{% url 'products' %}?sub_category=xbox1_horror" class="dropdown-item">Horror</a>
+                <a href="{% url 'products' %}?sub_category=xbox1_platform" class="dropdown-item">Platform</a>
+                <a href="{% url 'products' %}?platform=xbox1" class="dropdown-item">All Xbox One Games</a>
             </div>
         </li>
     </ul>
