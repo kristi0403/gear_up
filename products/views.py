@@ -4,7 +4,7 @@ from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from django.core.paginator import Paginator, EmptyPage
 from django.db.models.functions import Lower
-from .models import Product, Category, Platform, Sub_category
+from .models import Product, Category, Platform, Sub_category, Special_category
 from .forms import ProductForm
 # Create your views here.
 
@@ -28,6 +28,13 @@ def all_products(request):
             if direction == 'desc':
                 sortkey = f'-{sortkey}'
             products = products.order_by(sortkey)
+
+        if 'special_category' in request.GET:
+            special_categories = request.GET['special_category'].split(',')
+            products = products.filter(
+                special_category__name__in=special_categories)
+            special_categories = Special_category.objects.filter(
+                name__in=special_categories)
 
         if 'platform' in request.GET:
             platforms = request.GET['platform'].split(',')
