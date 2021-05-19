@@ -414,4 +414,35 @@ input[name='q']::placeholder {
     body {
         height: calc(100vh - 116px);
     }
+
+    .nav-link {
+        padding: .5rem;
+    }
+
+    .navbar {
+        padding: .5rem;
+    }
+
+    .navbar-toggler {
+        border: 2px solid #007bff;
+    }
+
+    .fa-bars {
+        color: #007bff;
+        margin-top: 5px;
+    }
+
+    .navbar-nav {
+        align-items: flex-start;
+    }
+
+    .nav-item {
+        margin: 5px 0px 5px 0px;
+
+    }
+
+    .dropdown {
+        margin: 0px 5px 0px 0px;
+
+    }
 }
