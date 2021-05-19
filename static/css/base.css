@@ -425,10 +425,6 @@ input[name='q']::placeholder {
         padding: .5rem;
     }
 
-    .navbar {
-        padding: .5rem;
-    }
-
     .navbar-toggler {
         border: 2px solid #007bff;
     }
