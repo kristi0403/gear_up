@@ -129,6 +129,12 @@ ul {
     width: fit-content;
 }
 
+.carousel-button {
+    background: black;
+    color: white;
+    min-width: 260px;
+}
+
 .shop-now-button {
     background: black;
     color: white;
@@ -444,5 +450,18 @@ input[name='q']::placeholder {
     .dropdown {
         margin: 0px 5px 0px 0px;
 
+    }
+
+    .home-container {
+        padding: 50px 10px 0px 10px;
+
+    }
+
+    .mobile-search {
+        background-color: #100;
+    }
+
+    .carousel-button {
+        display: none;
     }
 }
