@@ -1,6 +1,5 @@
 {% extends "base.html" %}
 {% load static %}
-
 {% block page_header %}
 <div class="container header-container">
     <div class="row">
@@ -8,7 +7,6 @@
     </div>
 </div>
 {% endblock %}
-
 {% block content %}
 <div class="overlay"></div>
 <div class="container-fluid product-display">
@@ -16,6 +14,7 @@
         <div class="col text-center mt-3">
             <h2 class="logo-font">Products</h2>
             {% for c in current_categories %}
+            <!--Get products by category-->
             <a class="category-badge text-decoration-none" href="{% url 'products' %}?category={{ c.name }}">
                 <span
                     class="p-2 mt-2 badge badge-white text-black rounded-0 border border-dark">{{ c.friendly_name}}</span>
@@ -29,6 +28,7 @@
             <div class="row mt-1 mb-2">
                 <div class="col-12 col-md-6 my-auto order-md-last d-flex justify-content-center justify-content-md-end">
                     <div class="sort-select-wrapper w-50">
+                        <!--Product sorting-->
                         <select id="sort-selector"
                             class="custom-select custom-select-sm rounded-0 border border-{% if current_sorting != 'None_None' %}info{% else %}black{% endif %}">
                             <option value="reset" {% if current_sorting == 'None_None' %}selected{% endif %}>Sort by...
@@ -139,6 +139,7 @@
     </a>
 </div>
 <div class="pagination">
+    <!--Pagination section-->
     <div class="my-5">
         {% if products.has_previous %}
         <a class="pagination-action" href="{% url 'products' %}?page=1"><i class="fas fa-angle-double-left"></i></a>

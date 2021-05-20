@@ -48,6 +48,9 @@ ul {
     top: 100px;
 }
 
+
+/* button frames */
+
 .frame {
     outline-width: 2px;
     outline-color: cornflowerblue;
@@ -60,9 +63,17 @@ ul {
     outline-style: solid;
 }
 
+
+/* logo classes */
+
 .page-logo {
     background-size: cover;
     height: 100px;
+}
+
+.logo-font {
+    text-transform: uppercase;
+    color: white;
 }
 
 .platform-logo {
@@ -75,7 +86,9 @@ ul {
     max-height: 650px;
 }
 
+
 /* from Bulma */
+
 .icon {
     align-items: center;
     display: inline-flex;
@@ -83,6 +96,7 @@ ul {
     height: 1.5rem;
     width: 1.5rem;
 }
+
 
 /* Paginator */
 
@@ -116,11 +130,6 @@ ul {
     background-color: #3354AA;
 }
 
-.logo-font {
-    text-transform: uppercase;
-    color: white;
-}
-
 .product-page {
     background-color: lavender;
 }
@@ -140,6 +149,7 @@ ul {
     color: white;
     min-width: 260px;
 }
+
 
 /* Product Form */
 
@@ -248,7 +258,9 @@ input[name='q']::placeholder {
     color: #aab7c4;
 }
 
+
 /*--------------------------------footer */
+
 .footer {
     background: #152F4F;
     color: white;
@@ -257,6 +269,7 @@ input[name='q']::placeholder {
 .copyright p {
     border-top: 1px solid rgba(255, 255, 255, .1);
 }
+
 
 /* ------------------------------- bootstrap toasts */
 
@@ -279,7 +292,9 @@ input[name='q']::placeholder {
     color: white !important;
 }
 
+
 /* from CSS-tricks.com: https://css-tricks.com/snippets/css/css-triangle/ */
+
 .arrow-up {
     width: 0;
     height: 0;
@@ -291,7 +306,9 @@ input[name='q']::placeholder {
     right: 36px;
 }
 
+
 /* Convenience classes - colors copied from Bootstrap */
+
 .arrow-primary {
     border-bottom-color: #007bff !important;
 }
@@ -330,14 +347,18 @@ input[name='q']::placeholder {
     overflow-y: auto;
 }
 
+
 /* -------------------------------- Media Queries */
 
+
 /* Slightly larger container on xl screens */
+
 @media (min-width: 1200px) {
     .container {
         max-width: 80%;
     }
 }
+
 
 /* Allauth form formatting */
 
@@ -379,7 +400,6 @@ input[name='q']::placeholder {
     font-size: 1rem;
     line-height: 1.5;
     border-radius: 0;
-
     /* standard bootstrap btn transitions */
     transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
@@ -396,7 +416,9 @@ input[name='q']::placeholder {
     /* text-info */
 }
 
+
 /* fixed top navbar only on medium and up */
+
 @media (min-width: 992px) {
     .fixed-top-desktop-only {
         position: fixed;
@@ -411,7 +433,9 @@ input[name='q']::placeholder {
     }
 }
 
+
 /* pad the top a bit when navbar is collapsed on mobile */
+
 @media (max-width: 991px) {
     .header-container {
         padding-top: 116px;
@@ -440,17 +464,14 @@ input[name='q']::placeholder {
 
     .nav-item {
         margin: 5px 0px 5px 0px;
-
     }
 
     .dropdown {
         margin: 0px 5px 0px 0px;
-
     }
 
     .home-container {
         padding: 50px 10px 0px 10px;
-
     }
 
     .mobile-search {
