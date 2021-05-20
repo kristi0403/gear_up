@@ -460,4 +460,20 @@ input[name='q']::placeholder {
     .carousel-button {
         display: none;
     }
+
+    .bag-container {
+        padding: 165px 15px;
+    }
+
+    .mobile-bag-display {
+        padding: 0;
+    }
+
+    .checkout-bag-mobile {
+        display: list-item;
+    }
+
+    .keep-shoping-mobile {
+        display: block;
+    }
 }
