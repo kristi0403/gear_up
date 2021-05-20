@@ -476,4 +476,8 @@ input[name='q']::placeholder {
     .keep-shoping-mobile {
         display: block;
     }
+
+    .price-mobile-bag {
+        display: none;
+    }
 }
