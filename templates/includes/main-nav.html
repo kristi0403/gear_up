@@ -1,4 +1,5 @@
 <div class="collapse navbar-collapse" id="main-nav">
+    <!--Dropdown menu for all games sorting-->
     <ul class="navbar-nav w-auto mx-auto">
         <li class="nav-item dropdown">
             <a class="frame logo-font font-weight-bold nav-link text-white mr-5" href="#" id="all-products-link"
@@ -12,6 +13,7 @@
                 <a href="{% url 'products' %}" class="dropdown-item">All Games</a>
             </div>
         </li>
+        <!--Ps4 platform categories and subcategories-->
         <li class="nav-item dropdown">
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="ps4-link" data-toggle="dropdown"
                 aria-haspopup="true" aria-expanded="false">
@@ -28,6 +30,7 @@
                 <a href="{% url 'products' %}?platform=ps4" class="dropdown-item">All PS4 games</a>
             </div>
         </li>
+        <!--Xbox 1 platform categories and subcategories-->
         <li class="nav-item dropdown">
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="xbox-one-link"
                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -44,12 +47,14 @@
                 <a href="{% url 'products' %}?platform=xbox1" class="dropdown-item">All Xbox One Games</a>
             </div>
         </li>
+        <!--Clearence section-->
         <li class="nav-item">
             <a class="frame logo-font font-weight-bold nav-link text-white mr-5"
                 href="{% url 'products' %}?special_category=clearence">
                 Clearence
             </a>
         </li>
+        <!--New arrivals section-->
         <li class="nav-item">
             <a class="frame logo-font font-weight-bold nav-link text-white mr-5"
                 href="{% url 'products' %}?special_category=new_arrivals">

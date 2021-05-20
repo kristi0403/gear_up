@@ -1,6 +1,8 @@
 <li class="list-inline-item">
+    <!--Mobile top nav title-->
     <h1 class="page-title text-white d-block d-lg-none">Gear Up</h1>
 </li>
+<!--Bag-->
 <li class="list-inline-item">
     <a class="{% if grand_total %}text-primary font-weight-bold{% else %}{% endif %} nav-link d-block d-lg-none"
         href="{% url 'view_bag' %}">
@@ -16,6 +18,7 @@
         </div>
     </a>
 </li>
+<!--Acount-->
 <li class="list-inline-item dropdown">
     <a class="nav-link d-block d-lg-none" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true"
         aria-expanded="false">
@@ -24,6 +27,7 @@
             <p class="my-0">My Account</p>
         </div>
     </a>
+    <!--User options-->
     <div class="dropdown-menu border-0" aria-labelledby="user-options">
         {% if request.user.is_authenticated %}
         {% if request.user.is_superuser %}
@@ -37,6 +41,7 @@
         {% endif %}
     </div>
 </li>
+<!--Home button-->
 <li class="list-inline-item">
     <a class="nav-link d-block d-lg-none" href="{% url 'home' %}">
         <div class="text-center">
@@ -45,6 +50,7 @@
         </div>
     </a>
 </li>
+<!--Search Bar-->
 <li class="list-inline-item">
     <a class="nav-link d-block d-lg-none" href="#" id="mobile-search" data-toggle="dropdown" aria-haspopup="true"
         aria-expanded="false">
