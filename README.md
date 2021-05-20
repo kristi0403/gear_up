@@ -88,11 +88,11 @@ If i would take into consideration four different users and how they may behave 
 
  ## Design process
  Above are the first ideas of the webpage shown in wireframes
-![IMG_3994](https://user-images.githubusercontent.com/63249988/118945727-a19d6800-b94d-11eb-8156-d843966e108b.JPG)
-![IMG_3993](https://user-images.githubusercontent.com/63249988/118945738-a530ef00-b94d-11eb-9a19-16a8c4e8e064.JPG)
-![IMG_3991](https://user-images.githubusercontent.com/63249988/118945746-a6fab280-b94d-11eb-844f-ae5707ba1383.JPG)
-![IMG_3995](https://user-images.githubusercontent.com/63249988/118945753-a82bdf80-b94d-11eb-9cca-e36283a245f0.JPG)
-![IMG_3992](https://user-images.githubusercontent.com/63249988/118945759-a95d0c80-b94d-11eb-8fac-a5cfab2373b0.JPG)
+![thumbnail_IMG_1435](https://user-images.githubusercontent.com/63249988/118948586-533d9880-b950-11eb-8c57-b5c47fc1258e.jpeg)
+![thumbnail_IMG_1434](https://user-images.githubusercontent.com/63249988/118948592-546ec580-b950-11eb-8db1-1d8eb91c42bd.jpeg)
+![thumbnail_IMG_1432](https://user-images.githubusercontent.com/63249988/118948599-56388900-b950-11eb-9264-28465c5b5b46.jpeg)
+![thumbnail_IMG_1433](https://user-images.githubusercontent.com/63249988/118948605-56d11f80-b950-11eb-965f-04a30f62499b.jpeg)
+![thumbnail_IMG_1431](https://user-images.githubusercontent.com/63249988/118948611-58024c80-b950-11eb-8cf2-db01709a3de6.jpeg)
 
 how the actual app was finished
 
